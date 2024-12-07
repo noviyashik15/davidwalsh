@@ -1,0 +1,68 @@
+*{padding: 0; background-color: rgb(100, 102, 181) }
+/* Запрет прокрутки */
+html, body {margin: 0; height: 100%; overflow: hidden}
+body { 
+  display: flex; 
+  min-height: 100vh;
+  justify-content: center;
+  font-family: "poppins", sans-serif;
+  font-size: 0.8rem;
+}
+#prim01, #prim02, #prim03, #prim04, #prim05, #prim06, #prim07,
+#prim08, #prim09, #prim10, #prim11, #prim12, #prim13, #prim14, #prim15
+{display: none}
+
+#butnfon{ display: flex;
+align-items: center;
+justify-content: space-between;  
+align-items: flex-start; 
+position: absolute; z-index: 3;
+opacity: 0;
+background-color: white;
+border: none;
+cursor: pointer;
+transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+#butnfon:hover {
+opacity: 1;
+color: black; 
+}
+.container { position: absolute; 
+  text-align: center;
+  margin-top: 32rem;
+}
+.fade-in {
+    opacity: 0; /* начальное значение непрозрачности */
+    animation: fadeIn ease-in 1; /* добавляем анимацию fadeIn */
+    animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+    animation-duration: 6s; /* длительность анимации в 1 секунду */
+  }
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+.animate__slideOutRight{
+  --animate-duration: 20s;
+  /* --animate-delay: 1s; */
+}
+.animate__slideOutLeft{
+  --animate-duration: 20s;
+}
+.animate__slideInRight{
+  --animate-duration: 20s;
+}
+.animate__slideInLeft{
+  --animate-duration: 20s;
+}
+/* David Walsh */
+img { z-index: 2;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+img[data-src] {
+  opacity: 0;
+}
