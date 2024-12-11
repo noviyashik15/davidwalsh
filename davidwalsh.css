@@ -47,10 +47,16 @@ color: black;
 }
 .animate__slideOutRight{
   --animate-duration: 20s;
+  position: absolute;
+  margin-top: -1.5rem; 
+  margin-left: 15rem;  
   /* --animate-delay: 1s; */
 }
 .animate__slideOutLeft{
   --animate-duration: 20s;
+  position: absolute;
+  margin-top: -1.5rem; 
+  margin-left: 15rem;  
 }
 .animate__slideInRight{
   --animate-duration: 20s;
