@@ -1,4 +1,6 @@
-*{padding: 0; background-color: rgb(100, 102, 181) }
+*{padding: 0; 
+  /* background-color: rgb(100, 102, 181)  */
+}
 /* Запрет прокрутки */
 html, body {margin: 0; height: 100%; overflow: hidden}
 body { 
