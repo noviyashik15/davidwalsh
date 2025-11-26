@@ -1,6 +1,4 @@
-*{padding: 0; 
-  /* background-color: rgb(100, 102, 181)  */
-}
+*{ padding: 0; }
 /* Запрет прокрутки */
 html, body {margin: 0; height: 100%; overflow: hidden}
 body { 
@@ -73,4 +71,12 @@ img { z-index: 2;
 }
 img[data-src] {
   opacity: 0;
+}
+
+.autoprknp{ background: transparent;
+padding: 10px;
+cursor: pointer;
+border: 1px solid rgb(231, 88, 88);
+border-radius: 1rem;
+margin-bottom: .5rem;
 }
