@@ -1,12 +1,11 @@
-*{ padding: 0; }
-/* Запрет прокрутки */
+*{ margin: 0; padding: 0; } /* Запрет прокрутки */
 html, body {margin: 0; height: 100%; overflow: hidden}
 body { 
-  display: flex; 
-  min-height: 100vh;
-  justify-content: center;
-  font-family: "poppins", sans-serif;
-  font-size: 0.8rem;
+display: flex; 
+min-height: 100vh;
+justify-content: center;
+font-family: "poppins", sans-serif;
+font-size: 0.8rem;
 }
 #prim01, #prim02, #prim03, #prim04, #prim05, #prim06, #prim07,
 #prim08, #prim09, #prim10, #prim11, #prim12, #prim13, #prim14, #prim15
@@ -18,7 +17,6 @@ justify-content: space-between;
 align-items: flex-start; 
 position: absolute; z-index: 3;
 opacity: 0;
-background-color: white;
 border: none;
 cursor: pointer;
 transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -32,31 +30,27 @@ color: black;
   margin-top: 32rem;
 }
 .fade-in {
-    opacity: 0; /* начальное значение непрозрачности */
-    animation: fadeIn ease-in 1; /* добавляем анимацию fadeIn */
-    animation-fill-mode: forwards; /* будет видимым после завершения анимации */
-    animation-duration: 6s; /* длительность анимации в 1 секунду */
-  }
+opacity: 0; /* начальное значение непрозрачности */
+animation: fadeIn ease-in 1; /* добавляем анимацию fadeIn */
+animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+animation-duration: 6s; /* длительность анимации в 1 секунду */
+}
 @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+0% { opacity: 0; }
+100% { opacity: 1; }
 }
 .animate__slideOutRight{
   --animate-duration: 20s;
   position: absolute;
   margin-top: -1.5rem; 
-  margin-left: 15rem;  
+  margin-left: 29rem;  
   /* --animate-delay: 1s; */
 }
 .animate__slideOutLeft{
   --animate-duration: 20s;
   position: absolute;
   margin-top: -1.5rem; 
-  margin-left: 15rem;  
+  margin-left: 29rem;  
 }
 .animate__slideInRight{
   --animate-duration: 20s;
@@ -71,12 +65,4 @@ img { z-index: 2;
 }
 img[data-src] {
   opacity: 0;
-}
-
-.autoprknp{ background: transparent;
-padding: 10px;
-cursor: pointer;
-border: 1px solid rgb(231, 88, 88);
-border-radius: 1rem;
-margin-bottom: .5rem;
 }
